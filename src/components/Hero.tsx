@@ -23,7 +23,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-16 sm:pt-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div
-        className="absolute inset-0 opacity-30"
+        className="absolute inset-0 opacity-40"
         style={{
           background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(59, 130, 246, 0.15), transparent 40%)`,
         }}
@@ -93,7 +93,7 @@ export default function Hero() {
                 </div>
 
                 <div className="p-3 sm:p-4 relative h-full">
-                  {/* file tabs */}
+                  {/* FILE TABS */}
                   <div className="flex space-x-1 sm:space-x-2 mb-3 sm:mb-4 overflow-x-auto">
                     <button
                       onClick={() => setActiveTab("App.tsx")}
@@ -127,7 +127,7 @@ export default function Hero() {
                     </button>
                   </div>
 
-                  {/* Code Content */}
+                  {/* CODE CONTENT */}
                   <div className="relative overflow-hidden grow">
                     <SyntaxHighlighter
                       language="javascript"
@@ -150,7 +150,7 @@ export default function Hero() {
                 </div>
               </div>
 
-              {/* Floating Cards */}
+              {/* FLOATING CARDS */}
               <div
                 className={`hidden lg:block absolute bottom-4 right-4 transform translate-x-8 translate-y-8 w-72 ${currentFloatingCard.bgColor} backdrop-blur-xl rounded-lg p-4 border border-white/20 shadow-2xl`}
               >

@@ -1,5 +1,6 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import logoCodeFlow from "/logo.png";
 
 export default function Navbar() {
 
@@ -12,7 +13,7 @@ export default function Navbar() {
 
           <div className="flex items-center space-x-1 group cursor-pointer">
             <div>
-              <img src="/logo.png" alt="CodeFlow logo" className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10"/>
+              <img src={logoCodeFlow} alt="CodeFlow logo" className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10"/>
             </div>
             
             <span className="text-lg sm:text-xl md:text-2xl font-medium">
