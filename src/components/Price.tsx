@@ -106,12 +106,19 @@ export default function Price() {
                 ))}
               </ul>
 
-              <button className="mt-6 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">
-                Choose Plan
-              </button>
+            <button className={`w-full py-2.5 sm:py-3 px-4 sm:px-6 rounded-lg font-semibold transition-all duration-300 mt-5 hover:scale-105 cursor-pointer text-sm sm:text-base ${plan.mostPopular ? "bg-linear-to-b from-blue-500 to-cyan-500" : "bg-white/5 border border-white/10 hover:bg-white/10"}`}>
+              Get Started
+            </button>
             </div>
           ))}
         </div>
+
+        <div className="mt-8 sm:mt-12 text-center">
+          <p className="text-gray-400 text-xl">
+            Need a custom plan? <a href="11957299485" className="text-blue-400 hover:text-blue-300">Contact our sales team</a>
+          </p>
+        </div>
+
       </div>
     </section>
   );
