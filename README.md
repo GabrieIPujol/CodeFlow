@@ -1,73 +1,38 @@
-# React + TypeScript + Vite
+# 🚀 CodeFlow (Projeto Fictício)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O **CodeFlow** é uma plataforma conceitual de edição de código e aprendizado, desenvolvida como um **projeto de estudo** para demonstrar habilidades em desenvolvimento web moderno.
 
-Currently, two official plugins are available:
+> [!IMPORTANT]
+> **Aviso de Projeto Fictício:** Este site foi criado apenas para fins de portfólio e prática de desenvolvimento. Não é um serviço comercial real e não deve ser utilizado para armazenar códigos de produção sensíveis.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 **Visualize o Protótipo:** [gabrieipujol.github.io/CodeFlow/](https://gabrieipujol.github.io/CodeFlow/)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Sobre o Projeto
 
-## Expanding the ESLint configuration
+O CodeFlow simula a experiência de um ambiente de codificação leve e acessível diretamente no navegador. O objetivo principal foi aplicar conceitos avançados de **React**, **gerenciamento de estado** e **estilização responsiva**.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### ✨ O que este estudo simula:
+- **Editor Conceitual:** Uma interface de escrita de código rápida e intuitiva.
+- **Preview Visual:** Simulação de como o código se comportaria em tempo real.
+- **Design de Experiência (UX):** Um fluxo de trabalho focado na produtividade do desenvolvedor.
+- **Interface Moderna:** Uso de Dark Mode e componentes altamente polidos.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Stack Tecnológica
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Este projeto foi construído para testar a integração das seguintes ferramentas:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+* **React.js** (Lógica de interface)
+* **Tailwind CSS** (Estilização utilitária)
+* **Vite** (Ambiente de build rápido)
+* **Lucide React** (Pacote de ícones)
+* **GitHub Pages** (Hospedagem da demonstração)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📦 Como rodar este estudo localmente
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Se você deseja explorar o código-fonte deste projeto:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. **Clone o repositório:**
+   ```bash
+   git clone [https://github.com/gabrieipujol/CodeFlow.git](https://github.com/gabrieipujol/CodeFlow.git)
