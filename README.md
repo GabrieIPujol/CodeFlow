@@ -31,7 +31,7 @@ Este projeto foi construído para testar a integração das seguintes ferramenta
 
 ## 📦 Como rodar este estudo localmente
 
-Se você deseja explorar o código-fonte deste projeto:
+Se você deseja explorar o código fonte deste projeto:
 
 1. **Clone o repositório:**
    ```bash
